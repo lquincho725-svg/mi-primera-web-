@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Gestión Financiera</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    margin-top:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+}
+
+button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#084298;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table,th,td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#0d6efd;
+    color:white;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    margin:20px;
+    color:gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Sistema Web de Gestión Financiera</h1>
+<p>Control de comprobantes</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Registrar Comprobante</h2>
+
+<label>Tipo</label>
+<input type="text" placeholder="Factura">
+
+<label>Número</label>
+<input type="text" placeholder="F001-0001">
+
+<label>Proveedor</label>
+<input type="text" placeholder="Empresa ABC">
+
+<label>Fecha</label>
+<input type="date">
+
+<label>Monto</label>
+<input type="number" placeholder="250.00">
+
+<button onclick="mensaje()">Guardar</button>
+
+</div>
+
+<div class="card">
+
+<h2>Comprobantes Registrados</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Tipo</th>
+<th>Número</th>
+<th>Proveedor</th>
+<th>Fecha</th>
+<th>Monto</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Factura</td>
+<td>F001-001</td>
+<td>ABC SAC</td>
+<td>10/07/2026</td>
+<td>S/ 350</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Boleta</td>
+<td>B001-010</td>
+<td>XYZ EIRL</td>
+<td>11/07/2026</td>
+<td>S/ 120</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Factura</td>
+<td>F001-020</td>
+<td>Comercial Perú</td>
+<td>12/07/2026</td>
+<td>S/ 980</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Reporte</h2>
+
+<p><b>Total de comprobantes:</b> 3</p>
+<p><b>Total registrado:</b> S/ 1,450.00</p>
+
+</div>
+
+</div>
+
+<footer>
+
+Proyecto - Sistema Web de Gestión Financiera
+
+</footer>
+
+<script>
+
+function mensaje(){
+alert("Comprobante registrado correctamente (Demostración).");
+}
+
+</script>
+
+</body>
+</html>
